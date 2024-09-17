@@ -1,0 +1,40 @@
+form
+{
+    font-family: sans-serif;
+    width: 360px;
+    height: 280px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    padding: 25px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+button
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 80%;
+    background: #04AA6D;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    margin: auto;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+}
+
+button:hover
+{
+    opacity: 0.7;
+}
+
+.app 
+{
+    text-decoration: none;
+    color: white;
+}

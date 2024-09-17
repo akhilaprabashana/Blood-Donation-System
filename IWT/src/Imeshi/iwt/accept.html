@@ -1,0 +1,139 @@
+php
+include_once('config.php');
+
+$query= "S
+<?ELECT * FROM Consultant";
+	$result=mysqli_query($query);
+	?>
+DOCTYPE HTML>
+<html>
+
+
+
+<head>
+  <title>eBLoodBank :: BloodDonationSystem</title>
+
+  <link rel="stylesheet" href="css/index.css">
+   <link rel="stylesheet" href="css/Style1.css">
+  <style>
+    .card {
+      padding: 10px 20px;
+      margin: 10px 10px;
+      background-color: #F2F2F2;
+      display: flex;
+      justify-content: center ;
+      align-items: center;
+
+    }
+    .card text {
+      margin-left: auto;
+
+    }
+
+    .consultant span {
+      font-size: 27px;
+      margin: 10px 15px;
+    }
+
+    .consultant button {
+      margin: 10px 15px;
+    }
+
+    .consultant {
+      font-size: 20px;
+      color: black;
+      background-color: #FFFFFF;
+      padding: 10px 20px;
+    }
+    .accept_icon {
+      color: #009588
+    }
+    .reject_icon {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div id="main">
+    <div id="header1">
+      <div id="lg">
+        <div id="lg_text">
+          <h1><a href="index.html">eBlood<span class="lg_colour">Bank</span></a></h1>
+          <h2>Give the gift of life :: Donate Blood</h2>
+        </div>
+      </div>
+
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="selected"><a href="consultant.html">Login</a></li>
+          <li><a href="addpatient.html">ADD patient</a></li>
+          <li><a href="accept.html">Accept & Reject</a></li>
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="consultant">
+
+      <center>
+        <h2>Request acceptable</h2></br></br></br>
+        <form method="post" action="accept.php">
+
+          <div class="card">
+            <label for="consultant"></label>
+            Request no 1
+            <button><span class="accept_icon">&#10004;</span>
+            </button><button><span class="reject_icon">&#10006;</span></button>
+            </br></br>
+          </div>
+
+          <div class="card">
+            <label for="consultant"></label>
+            Request no 2
+            <button><span class="accept_icon">&#10004;</span>
+            </button><button><span class="reject_icon">&#10006;</span></button>
+            </br></br>
+          </div>
+
+          <div class="card">
+            <label for="consultant"></label>
+            Request no 3
+            <button><span class="accept_icon">&#10004;</span>
+            </button><button><span class="reject_icon">&#10006;</span></button>
+            </br></br>
+          </div>
+
+          <div class="card">
+            <label for="consultant"></label>
+            Request no 4 
+            <button><span class="accept_icon">&#10004;</span>
+            </button><button ><span class="reject_icon">&#10006;</span></button>
+            </br></br>
+          </div>
+
+
+
+
+
+        </form>
+
+
+      </center>
+    </div>
+
+    
+
+    <div id="footer">
+      Copyright &copy; IT21249952 | SLIIT | 2022 | Design By - MLB_04.01_02 </a>
+    </div>
+  </div>
+</body>
+
+
+
+</html>
